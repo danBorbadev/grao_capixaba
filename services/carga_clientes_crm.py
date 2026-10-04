@@ -24,13 +24,13 @@ def carregar_csv(caminho):
                     INSERT INTO clientes (
                         codigo,
                         nome,
-                        email,
                         telefone,
                         cidade,
                         uf,
                         data_cadastro,
                         origem,
-                        act_marketing
+                        act_marketing,
+                        email
                     )
                     VALUES (
                         %s,
