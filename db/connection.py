@@ -26,9 +26,5 @@ if conn:
     print('Banco Disponível')
 
 
-cursor = conn.cursor()
 
-cursor.execute("SELECT * FROM clientes");
 
-dados = cursor.fetchall()
-print(dados)
