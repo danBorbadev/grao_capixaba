@@ -35,3 +35,14 @@ ALTER TABLE pedidos_ecommerce
 ADD CONSTRAINT fk_pedidos_cliente
 FOREIGN KEY (email)
 REFERENCES clientes(email);
+
+
+CREATE TABLE campanhas_google_ads (
+    dia DATE,
+    campanha VARCHAR(100),
+    status VARCHAR(20),
+    custo DECIMAL(10,2),
+    impressoes INTEGER,
+    cliques INTEGER,
+    conversoes DECIMAL(10,2)
+);
